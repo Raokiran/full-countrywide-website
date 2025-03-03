@@ -1,0 +1,153 @@
+<html>
+
+<head>
+
+    <title>Country Wide</title>
+    <link rel="stylesheet" href="Country.css">
+
+    <script>
+        document.addEventListener("DOMContentLoaded",function(){
+          fetch('header.html')
+          .then(response => response.text())
+          .then(html => {
+            let navbarContainer = document.createElement('div');
+            let shadowRoot = navbarContainer.attachShadow({ mode: 'open' });
+            shadowRoot.innerHTML = html;
+            document.body.prepend(navbarContainer); 
+          });
+        
+          fetch('footer.html')
+          .then(response => response.text())
+          .then(html => {
+            let navbarContainer = document.createElement('div');
+            let shadowRoot = navbarContainer.attachShadow({ mode: 'open' });
+            shadowRoot.innerHTML = html;
+            document.body.appendChild(navbarContainer); 
+          });
+        });
+        </script>
+</head>
+<body>
+
+    <div style="padding:40px"></div>
+    <div class="bg page_header">
+        <h1 class="text">About Us</h1>
+        <div class="links">
+            <a href="home.html" class="link-color">Home</a> .
+            <a href="about.html">About Us</a>
+        </div>
+    </div>
+
+    <div style="display:flex; padding-top:20px; width:1280px;">
+        <div>
+            <div style="background-color:red; font-size:20px; font-family:armenian; color:white; border-radius:10px; width:94px; text-align:center">-About Us-</div>
+            <h5 style="font-size:19px; font-family:Arial; color:grey">
+                At Country Wide Tours and Travels, we believe that travel and Forex go hand in hand. That’s why we offer both services under one roof. Our team of experts is passionate about making your travel plans hassle-free and your Forex transactions seamless. Whether traveling for leisure or business, you can count on us for the best deals and services. Our 24×7 online support is always there to assist you, no matter where you are in the world.
+            </h5>
+            <div style="display:flex; gap:10px">
+                <div class="card">
+                    <h1>2013</h1>
+                    <h4>Year <br> Established</h4>
+                </div>
+                <div class="card">
+                    <h1>35,000+</h1>
+                    <h4>Transactions</h4>
+                </div>
+                <div class="card">
+                    <h1>25,000+</h1>
+                    <h4>Happy <br> Customers</h4>
+                </div>
+            </div>
+        </div>
+        <img src="images/about.webp" style="height:450px; padding-right: 0px; width:450px">
+    </div>
+
+    <div style="padding-top:10px">
+        <h3 style="background-color:red; font-size:20px; font-family:armenian; color:white; border-radius:10px; width:94px; text-align:center">-FAQ-</h3>
+        <div>
+            <div class="faq">
+                <h3 tabindex="0">01. What currencies does Country Wide Tours and Travels exchange?</h3>
+                <p>Country Wide Tours and Travels deals in a wide range of foreign currencies, including but not limited to USD, EUR, GBP, AUD, CAD, and many others. Please contact us for specific currency inquiries.</p>
+            </div>
+
+            <div class="faq">
+                <h3 tabindex="0">02. What are your exchange rates?</h3>
+                <p>Our exchange rates vary based on market conditions and the currency you wish to exchange. For the most up-to-date rates, please visit our website or contact our customer service team.</p>
+            </div>
+
+            <div class="faq">
+                <h3 tabindex="0">03. Do I need to provide any documents for currency exchange?</h3>
+                <p>Yes, you need to provide a valid government-issued ID, such as a passport, Aadhar card, or driver’s license. Additional documentation may be required depending on the amount and type of currency being exchanged.</p>
+            </div>
+
+            <div class="faq">
+                <h3 tabindex="0">04. Is there a limit on the amount of currency I can exchange?</h3>
+                <p>The limit on currency exchange depends on various factors, including regulatory requirements. Please contact us for specific details regarding your transaction.</p>
+            </div>
+
+            <div class="faq">
+                <h3 tabindex="0">05. Can I reserve a specific currency in advance?</h3>
+                <p>Yes, you can pre-book your currency online or over the phone to ensure availability when you visit our branch.</p>
+            </div>
+
+            <div class="faq">
+                <h3 tabindex="0">06. Do you offer doorstep delivery services?</h3>
+                <p>Yes, Country Wide Tours and Travels offers doorstep delivery of foreign currency within Bangalore. Please check with our team for service availability and any associated charges.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
+
+<style>
+    .faq {
+        max-width: 1200px;
+        margin: auto;
+        border-bottom: 2px solid #ccc;
+        padding: 10px 0;
+    }
+
+    h3 {
+        cursor: pointer;
+        padding: 10px;
+        background: pink;
+        border-radius: 5px;
+        transition: background 0.3s ease-in-out;
+    }
+
+    h3:hover, h3:focus {
+        background: #ddd;
+    }
+
+    p {
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        font-size: 20px;
+        color: black;
+        font-family: Arial;
+        transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    }
+
+    .faq:hover p, .faq:focus-within p {
+        max-height: 200px;
+        opacity: 1;
+    }
+
+    .card {
+        height: 150px;
+        width: 150px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+        background: #fff;
+        text-align: center;
+        font-family: Arial, sans-serif;
+    }
+
+    .card:hover {
+        box-shadow: 0px 0px 15px rgba(0, 150, 255, 0.5);
+    }
+</style>

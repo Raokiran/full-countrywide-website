@@ -1,0 +1,87 @@
+<html>
+<head><title>Country Wide</title></head>
+<link rel="stylesheet" href="Country.css">
+<script>
+document.addEventListener("DOMContentLoaded",function(){
+  fetch('header.html')
+  .then(response => response.text())
+  .then(html => {
+    let navbarContainer = document.createElement('div');
+    let shadowRoot = navbarContainer.attachShadow({ mode: 'open' });
+    shadowRoot.innerHTML = html;
+    document.body.prepend(navbarContainer); 
+  });
+
+  fetch('footer.html')
+  .then(response => response.text())
+  .then(html => {
+    let navbarContainer = document.createElement('div');
+    let shadowRoot = navbarContainer.attachShadow({ mode: 'open' });
+    shadowRoot.innerHTML = html;
+    document.body.appendChild(navbarContainer); 
+  });
+});
+</script>
+
+<body>
+
+<div style="padding:40px"></div>
+<div class="bg page_header">
+<h1 class="text">Blogs</h1>
+<div class="links"><a href="home.html" class="link-color ">Home</a>.<a href="blogs.html">Blogs</a></div>
+</div>
+
+<div class="container">
+<div class="card card:hover">
+<img src="images/b1.webp"class="custom-img">
+<h2><a href="#">How Much Foreign Currency Allowed to Carry Out of India?</a></h2>
+<p>Before traveling abroad, it’s important to understand the foreign currency allowed to carry out of India to avoid any legal issues. The Reserve Bank of India (RBI) has set specific limits for carrying cash and using forex cards. Different countries also have their own declaration rules, so knowing the regulations ensures a hassle-free journey.</p>
+</div>
+
+<div class="card card:hover">
+<img src="images/b2.webp"class="custom-img">
+<h2><a href="#">Where to Exchange INR to VND in Bangalore?</a></h2>
+<p>If you’re planning a trip to Vietnam and wondering where to exchange INR to VND in Bangalore, you’re in the right place. Exchanging currency before your journey ensures a hassle-free travel experience, allowing you to focus on exploring the beauty of Vietnam rather than worrying about financial transactions.</p>
+</div>
+
+<div class="card card:hover">
+<img src="images/b3.webp" class="custom-img">
+<h2><a href="#">How Much Indian Currency Allowed to Carry Abroad? A Complete Guide?</a></h2>
+<p>Traveling abroad can be an exciting experience, whether it’s for business, leisure, or study purposes. But before you pack your bags, there’s one crucial question that often gets overlooked: how much Indian currency is allowed to carry abroad? It’s a valid concern, as there are regulations set by the Reserve Bank of India (RBI)</p>
+</div>
+
+</div>
+
+<body>
+</html>
+
+<style>
+  a{
+    color:rgb(10, 40, 175);
+  }
+  .custom-img {
+    width: 500px;
+    height: 150px;
+ 
+  }
+  .card {
+  height:500px;
+            width: 300px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            background: #fff;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            margin: 20px auto;
+        }
+		.card:hover {
+    box-shadow: 0px 0px 15px rgba(0, 150, 255, 0.5); /* Blue glow */
+}
+.container {
+    display: flex;  
+    gap: 1px;     
+    align-items: center; 
+}
+	
+</style>

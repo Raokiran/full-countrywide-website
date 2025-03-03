@@ -1,0 +1,126 @@
+<html>
+<head><title>Country Wide</title></head>
+<link rel="Stylesheet" href="Country.css">
+<script>
+    document.addEventListener("DOMContentLoaded",function(){
+    fetch('header.html')
+    .then(response=>response.text())
+    .then(html=>{
+        let header=document.createElement('div');
+        let shadow=header.attachShadow({mode:'open'});
+        shadow.innerHTML=html;
+        document.body.prepend(header);
+    });
+    
+    fetch('footer.html')
+    .then(response=>response.text())
+    .then(html=>{
+        let footer= document.createElement('div');
+        let shadow=footer.attachShadow({mode:'open'});
+        shadow.innerHTML=html;
+        document.body.append(footer);
+    });
+    });
+    
+    </script>
+    
+
+<body>
+    <div style="padding:40px"></div>
+<div class="bg page_header">
+<h1 class="text">Visa Assistance</h1>
+<div class="links"><a href="home.html" class="link-color">Home</a>.<a href="service.html" class="link-color">Services</a>.<a href="visa.html">Visa Assistance</a></div>
+</div>
+
+<div style="padding-top:10px">
+<div style="display:flex ; background-color:pink;padding-top:100px">
+<div style="padding-top:100px">
+<h1 style="text-align:left;font-weight:bold;  font-family: Georgia, serif;font-size:50px">Hassle-Free Visa Assistance for Your Next Journey</h1>
+<p style="color:grey;font-size:20px">Expert Guidance and Quick Processing</p>
+<a href="contact.html"><button>Get Started with Your Visa Application</button></a>
+</div>
+<img src="images/v1.webp">
+</div>
+
+
+<div style="display:flex; padding-top:10px; padding-bottom:10px;gap:30px">
+<div style="width:700px"><h3 style="text-align:left;font-weight:bold;  font-family: times new roman, serif;font-size:30px">Introduction</h3><p style="color:black;font-size:20px">Applying for a visa can be a daunting process, but not with Country Wide Tours and Travels. Our Visa Assistance service ensures that your application is handled with precision and care. From gathering documents to booking appointments, we provide end-to-end support to make sure you get your visa on time.</p></div>
+
+<div>
+<h4 style="text-align:left;font-weight:bold;  font-family: times new roman, serif;font-size:30px">Our Services</h4>
+
+<p style="color:black;font-size:20px"><strong>Visa Consultation:</strong> Unsure about the visa requirements? Our experts provide detailed consultations tailored to your travel plans.</p>
+
+<p style="color:black;font-size:20px"><strong>Document Verification:</strong> We help you compile and verify all necessary documents to ensure your application is complete and accurate.</p>
+
+<p style="color:black;font-size:20px"><strong>Application Processing:</strong> Our team handles the submission of your visa application, ensuring that it meets all embassy requirements.</p>
+
+<p style="color:black;font-size:20px"><strong>Appointment Scheduling:</strong> We take care of scheduling your embassy appointments, so you don’t have to worry about a thing.</p>
+
+</div>
+</div>
+
+
+<div style="background-color:blue;color:white">
+<h1 style="text-align:left;font-weight:bold; font-family: Georgia, serif;font-size:30px">Why Choose Country Wide Tours and Travels for Visa Assistance?</h1>
+<div style="display:flex;gap:20px">
+<img src="images/c2.webp">
+<div>
+<div class="card"><h3 style="padding-left:10px">Expert Team</h3><p style="padding-left:10px">Our experienced visa consultants are well-versed in the visa procedures of multiple countries.</p></div>
+
+<div class="card"><h3 style="padding-left:10px">Fast Processing</h3><p style="padding-left:10px">Get your visa in the shortest possible time with our efficient processing service.</p></div>
+
+<div class="card"><h3 style="padding-left:10px">Transparent Pricing</h3><p style="padding-left:10px">No hidden costs. We provide clear and upfront pricing for all our visa services.</p></div>
+
+<div class="card"><h3 style="padding-left:10px">Comprehensive Support</h3><p style="padding-left:10px">From start to finish, we are with you at every step of the visa application process.</p></div>
+</div>
+</div>
+</div>
+
+<div style="padding-top:10px;font-family: Georgia, serif;">
+<h1>FAQs</h1>
+<h3></h3><p></p><h3>How long does it take to get a visa?</h3>
+<p>Processing times vary depending on the country, but we aim to get your visa as quickly as possible.</p>
+
+<h3>What if my visa application is rejected?</h3>
+<p>In case of rejection, we assist you with understanding the reasons and guide you on the next steps.</p>
+
+
+</div>
+</div>
+</body>
+</html>
+
+
+<style>
+img{
+height:500px;
+
+}
+
+button {
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    height: 50px;
+    width: 500px;
+    border-radius: 10px;
+	    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+
+ .card {
+            
+            
+            border: 1px solid;
+            height:100px;
+            width: 700px;
+            border-radius: 20px;
+             box-shadow: 0px 4px 8px rgba(255, 255, 255, 1);
+            overflow: hidden;
+            background: blue;
+            text-align: left;
+            font-family: Arial, sans-serif;
+            margin: 20px auto;
+        }
+</style>

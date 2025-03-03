@@ -1,0 +1,161 @@
+<html>
+<head><title>Country Wide</title></head>
+<link rel="stylesheet" href="Country.css">
+
+<script>
+    document.addEventListener("DOMContentLoaded",function(){
+        fetch("header.html")
+        .then(response=>response.text())
+        .then(html=>{
+            let navbarContainer=document.createElement('div');
+            let shadow=navbarContainer.attachShadow({mode:'open'});
+            shadow.innerHTML=html;
+            document.body.prepend(navbarContainer)
+        });
+
+        fetch("footer.html")
+        .then(response=>response.text())
+        .then(html=>{
+let footercontainer=document.createElement('div');
+let shadow=footercontainer.attachShadow({mode:'open'});
+shadow.innerHTML=html;
+document.body.appendChild(footercontainer)
+        });
+    });
+</script>
+
+
+
+<body>
+<div style="padding:50px;"></div>
+<div class="bg page_header"></div>
+
+<div style="width:1290px; display:center ">
+<br>
+
+<div style="display:flex ;padding-top:20px">
+<div>
+<div style="background-color:red ;font-size:20px;font-family:armenian;color:white; border-radius:10px; width:94px">-About Us-</div>
+<p style="font-size:20px;font-family:Arial;color:grey">At Country Wide Tours and Travels, we believe that travel and Forex go hand in hand. That’s why we offer both services under one roof. Our team of experts is passionate about making your travel plans hassle-free and your Forex transactions seamless. Whether traveling for leisure or business, you can count on us for the best deals and services. Our 24×7 online support is always there to assist you, no matter where you are in the world.</p>
+<div style="display:flex;gap:10px">
+    <div class="card">
+        <h1>2013</h1>
+        <h3>Year <br> Established</h3>
+    </div>
+    <div class="card">
+        <h1>35,000+</h1>
+        <h3>Transactions</h3>
+    </div>
+    <div class="card">
+        <h1>25,000+</h1>
+        <h3>Happy <br> Customers</h3>
+    </div>
+</div>
+</div>
+<img src="images/about.webp" style="height:450px">
+</div>
+
+</div>
+
+
+<div style="padding-top:20px">
+<h2 style="font-family:Arial">Buy or Sell Foreign Currency at Live Exchange Rates</h2>
+<div style="display:flex; gap:20px">
+<img src="images/h1.webp"style="height:300px">
+
+<p style="font-size:20px;font-family:Arial;color:grey">At Country Wide Tours and Travels, we are passionate about providing our clients with quality travel and forex services. With our staff’s years of experience, we always strive to offer competitive rates and a smooth transaction process.
+Our mission is to ensure that each client walks away satisfied with their experience, and we work tirelessly to make that happen. From airport transfers to hotel bookings and forex exchange, we have you covered.<br>
+<br>Foreign exchange services have become essential to international transactions in today’s globalized world. Whether planning a trip abroad or making International payments, understanding the services provided by foreign exchange service providers is crucial. 
+These providers offer convenient solutions to facilitate seamless currency exchange.
+ Let’s explore the different services foreign exchange service providers provide to help you make informed decisions and optimize your International financial transactions.</p>
+</div>
+</div>
+
+<div style="padding-top:20px">
+<h1 style="text-align:center">Advantages of Country Wide <br>Tours and Travels</h2>
+<div style="display:flex; gap:50px;   justify-content: center; ">
+<div class="a-card"><h2>Competitive Rates</h2><h4 style="font-size:20px;font-family:armenian;color:grey">We acknowledge your desire to maximize the value of your investment. That’s precisely why we provide exceptionally competitive rates, guaranteeing savings by eliminating unnecessary charges.</h4></div>
+<div  class="a-card"><h2>Unparalleled Customer Service</h2><h4 style="font-size:20px;font-family:armenian;color:grey">Our dedicated team of professionals is unwavering in our commitment to delivering outstanding customer service. We go the extra mile to ensure that your foreign exchange needs are handled with efficiency, accuracy, and personalized care.</h4></div>
+<div  class="a-card"><h2>Trust and Security</h2><h4 style="font-size:20px;font-family:armenian;color:grey">With Country Wide Tours and Travels, rest assured knowing that your transactions occur within a secure environment. We prioritize the confidentiality and safety of your financial data, implementing rigorous measures to safeguard your information.</h4></div>
+</div>
+</div>
+
+
+<div style="padding-top:20px">
+<h2 style="text-align:center">Our Services at Country Wide Tours and Travels</h2>
+<h4 style="text-align:center;color:grey">At Country Wide Tours and Travels, we offer a range of essential services to make your international travel and financial transactions smooth and hassle-free. From currency exchange to travel cards and VISA assistance, we ensure your needs are met with professionalism and care.</h4>
+
+<div style="display:flex;justify-content:center;gap:50px">
+<div  class="a-card"><h2>Forex Services</h2><h4>We offer reliable foreign exchange services with secure transactions and competitive rates. Whether for travel, business, or personal needs, our process is simple and efficient.</h4></div>
+<div  class="a-card"><h2>International Tour Packages</h2><h4>Explore the world with our customized travel packages, covering top destinations, seamless bookings, and exclusive deals. Experience hassle-free international trips with expert planning and 24/7 support.</h4></div>
+<div class="a-card"><h2>Domestic Tour Packages</h2><h4>Explore diverse destinations across India with our well-planned tour packages. Enjoy comfortable accommodations, smooth travel arrangements, and personalized itineraries for a memorable journey.</h4></div>
+</div>
+
+<div style="padding-top:10;padding-left:1050px"><a href="service.html">View More</a></div>
+</div>
+
+<div style="padding:20px">
+<h4 style="color:green;text-align:center">-Testimonial-</h4>
+<h1 style="padding-top:10px;text-align:center">See Our Clients Motivation</h1>
+<div>
+<div style="display:flex;gap:20px">
+<div class="t-card"><h2>Karthik Sharma</h2><h4>Bengaluru</h4><p>Country Wide provides a quick, hassle-free currency exchange with minimal fees and transparent rates. It is a reliable and cost-effective service with a smooth and efficient process.
+</p></div>
+<div class="t-card"><h2>Prajwal SD</h2><h4>Bengaluru</h4><p>Country Wide and Tourist provides good service with an easy and fast currency exchange process, ensuring a smooth and hassle-free experience.
+</p></div>
+<div class="t-card"><h2>Zaffer</h2><h4>Bengaluru</h4><p>The staff was extremely patient and cooperative, guiding us through the transaction smoothly and without any issues.</p></div>
+</div>
+</div>
+</div>
+
+</body>
+</html>
+
+<style>
+          .card {
+            height:150px;
+            width: 150px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            background: #fff;
+            text-align: center;
+            font-family: Arial, sans-serif;
+             
+        }
+		.card:hover {
+    box-shadow: 0px 0px 15px rgba(0, 150, 255, 0.5); /* Blue glow */
+}
+.a-card {
+            height:350px;
+            width: 300px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            background: #fff;
+            text-align: center;
+            font-family: Arial, sans-serif;
+             
+        }
+		.a-card:hover {
+    box-shadow: 0px 0px 15px rgba(0, 150, 255, 0.5); /* Blue glow */
+}.t-card {
+            height:190px;
+            width: 500px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            background: #fff;
+            text-align: left;
+            font-family: Arial, sans-serif;
+             
+        }
+		.t-card:hover {
+    box-shadow: 0px 0px 15px rgba(0, 150, 255, 0.5); /* Blue glow */
+}
+
+
+
+
+
+</style>

@@ -1,0 +1,140 @@
+<html>
+<head><title>Country Wide</title></head>
+<link rel="Stylesheet" href="Country.css">
+<script>
+    document.addEventListener("DOMContentLoaded",function(){
+    fetch('header.html')
+    .then(response=>response.text())
+    .then(html=>{
+        let header=document.createElement('div');
+        let shadow=header.attachShadow({mode:'open'});
+        shadow.innerHTML=html;
+        document.body.prepend(header);
+    });
+    
+    fetch('footer.html')
+    .then(response=>response.text())
+    .then(html=>{
+        let footer= document.createElement('div');
+        let shadow=footer.attachShadow({mode:'open'});
+        shadow.innerHTML=html;
+        document.body.append(footer);
+    });
+    });
+    
+    </script>
+<body>
+    <div style="padding:40px"></div>
+<div>
+
+
+<div class="bg page_header">
+<h1 class="text">Travel Card</h1>
+<div class="links"><a href="home.html" class="link-color">Home</a>.<a href="service.html" class="link-color">Services</a>.<a href="travel.html">Travel Card</a></div>
+</div>
+
+
+<div style="padding-top:10px">
+
+
+<div style="display:flex ; background-color:pink;padding-top:100px">
+<div style="padding-top:100px">
+<h1 style="text-align:left;font-weight:bold;  font-family: Georgia, serif;font-size:50px">Your Perfect Travel Companion – Country Wide Tours and Travels Card</h1>
+<p style="color:grey;font-size:20px">Load, Swipe, and Save on Every Transaction</p>
+<a href="contact.html"><button type="button">Get Your Travel Card Now</button></a>
+</div>
+<img src="images/t1.webp">
+</div>
+
+<div style="display:flex; padding-top:10px; padding-bottom:10px;gap:30px">
+<div style="width:700px"><h3 style="text-align:left;font-weight:bold;  font-family: times new roman, serif;font-size:30px">Introduction</h3><p style="color:black;font-size:20px">Planning an international trip? With the Country Wide Tours and Travels Travel Card, you can enjoy the convenience of carrying multiple currencies in one card. Say goodbye to fluctuating exchange rates and hefty conversion fees. Whether you’re traveling for leisure or business, our Travel Card is your go-to solution for secure and hassle-free transactions.</p></div>
+<div>
+<h3 style="text-align:left;font-weight:bold;  font-family: times new roman, serif;font-size:30px">Benefits</h3>
+
+<p style="color:black;font-size:20px"><b>Secure Transactions:</b>Your money is safe with us. Our Travel Cards are chip-protected and PIN-enabled for maximum security.</p>
+<p style="color:black;font-size:20px"><b>Multi-Currency Support:</b>Load up to 16 currencies in one card and use it globally without worrying about currency conversions..</p>
+<p style="color:black;font-size:20px"><b>Lock-in Rates:</b> Avoid currency fluctuations by locking in the exchange rates when loading the card.</p>
+<p style="color:black;font-size:20px"><b>24/7 Assistance:</b>Get round-the-clock customer support for any issues or queries related to your Travel Card.</p>
+</div>
+</div>
+
+
+<div style="background-color:blue;color:white">
+<h1 style="text-align:left;font-weight:bold; font-family: Georgia, serif;font-size:30px">How It Works</h1>
+<div style="display:flex;gap:20px">
+<img src="images/t2.webp">
+<div>
+<div class="card"><p style="padding-left:10px;font-size:20px">1. Visit Country Wide Tours and Travels or apply online for your Travel Card.</p></div>
+
+<div class="card"><p style="padding-left:10px;font-size:20px">2. Load the card with your desired currencies.</p></div>
+
+<div class="card"><p style="padding-left:10px;font-size:20px">3. Swipe at any merchant outlet or withdraw cash from ATMs worldwide.</p></div>
+
+<div class="card"><p style="padding-left:10px;font-size:20px">4. Reload your card anytime, anywhere with our online portal.</p></div>
+</div>
+</div>
+</div>
+
+<div style="display:flex ; background-color:grey;padding-top:100px">
+<img src="images/t3.webp">
+<div style="color:white">
+<h1 style="text-align:left;font-weight:bold;  font-family: Georgia, serif;font-size:50px">Why Choose Country Wide Tours and Travels?</h1>
+<strong style="text-align:left;font-weight:bold;  font-family: Georgia, serif;font-size:20px" >Competitive Rates</strong><p>Enjoy the best exchange rates when you load or reload your card.</p>
+
+<strong style="text-align:left;font-weight:bold;  font-family: Georgia, serif;font-size:20px" >No Hidden Fees</strong><p>Transparent pricing with no surprise charges.</p>
+
+<strong style="text-align:left;font-weight:bold;  font-family: Georgia, serif;font-size:20px" >Instant Issuance</strong><p>Get your Travel Card instantly at our branch.</p>
+</div>
+</div>
+
+<div style="padding-top:10px;font-family: Georgia, serif;">
+<h1>FAQs</h1>
+<h3></h3><p></p><h3>How do I check my balance?</h3>
+<p>You can check your balance online, via SMS, or through our mobile app.</p>
+
+<h3>Can I reload the card while abroad?</h3>
+<p>Yes, you can reload your card online from anywhere worldwide.</p>
+</div>
+
+</div>
+</div>
+<body>
+</html>
+
+
+
+<style>
+img{
+height:500px;
+
+}
+
+button {
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    height: 50px;
+    width: 500px;
+    border-radius: 10px;
+	    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+
+ .card {
+            
+            
+            border: 1px solid;
+            height:70px;
+            width: 700px;
+            border-radius: 20px;
+             box-shadow: 0px 4px 8px rgba(255, 255, 255, 1);
+            overflow: hidden;
+            background: blue;
+            text-align: left;
+			padding-top:10px;
+            font-family: Arial, sans-serif;
+            margin: 20px auto;
+			font-weight:bold;
+		
+        }
+</style>

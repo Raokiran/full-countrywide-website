@@ -1,0 +1,117 @@
+<html>
+<head><title>Country Wide</title></head>
+<link rel="Stylesheet" href="Country.css">
+<script>
+document.addEventListener("DOMContentLoaded",function(){
+fetch('header.html')
+.then(response=>response.text())
+.then(html=>{
+    let header=document.createElement('div');
+    let shadow=header.attachShadow({mode:'open'});
+    shadow.innerHTML=html;
+    document.body.prepend(header);
+});
+
+fetch('footer.html')
+.then(response=>response.text())
+.then(html=>{
+    let footer= document.createElement('div');
+    let shadow=footer.attachShadow({mode:'open'});
+    shadow.innerHTML=html;
+    document.body.append(footer);
+});
+});
+
+</script>
+
+
+<body>
+<div style="padding:40px"></div>
+<div class="bg page_header">
+<h1 class="text">Services</h1>
+<div class="links"><a href="home.html" class="link-color">Home</a>.<a href="service.html">Services</a></div>
+</div>
+
+<div style="padding-top:10px">
+
+<div>
+<h1>Our Services at Country Wide Tours and Travels</h1>
+<h3>At Country Wide Tours and Travels, we offer a range of essential services to make your international travel and financial transactions smooth and hassle-free. From currency exchange to travel cards and VISA assistance, we ensure your needs are met with professionalism and care.</h3>
+<div style="display:flex;gap:30px;justify-content:center">
+<div class="a-card">
+    <h3>Forex Services</h3>
+    <p>We offer reliable foreign exchange services with secure transactions and competitive rates. Whether for travel, business, or personal needs, our process is simple and efficient.</p>
+</div>
+
+<div class="a-card">
+    <h3>International Tour Packages</h3>
+    <p>Explore the world with our customized travel packages, covering top destinations, seamless bookings, and exclusive deals. Experience hassle-free international trips with expert planning and 24/7 support.</p>
+</div>
+
+<div class="a-card">
+    <h3>Domestic Tour Packages</h3>
+    <p>Explore diverse destinations across India with our well-planned tour packages. Enjoy comfortable accommodations, smooth travel arrangements, and personalized itineraries for a memorable journey.</p>
+</div>
+
+<div class="a-card">
+    <h3>Visa Assistance</h3>
+    <p>We provide end-to-end visa assistance, ensuring a smooth application process with expert guidance. Our services include document verification, appointment scheduling, and timely updates.</p>
+</div>
+
+<div class="a-card">
+    <h3>Travel Insurance</h3>
+    <p>Our travel insurance plans offer financial protection against unexpected emergencies, including medical expenses and trip cancellations. Travel with peace of mind knowing you are covered throughout your journey.</p>
+</div>
+
+<div class="a-card">
+    <h3>Air Ticket Booking</h3>
+    <p>We offer seamless air ticket booking with the best fares and flexible options for domestic and international travel. Enjoy a hassle-free booking experience with secure payments and instant confirmations.</p>
+</div>
+</div>
+
+</div>
+
+
+<div style="padding:30px">
+<h1>Business to Business</h1>
+<h3>Solutions for Travel Agents and Corporates</h3>
+<div style="display:flex;gap:30px;justify-content:center">
+<div  class="a-card">
+    <h3>Travel Agent</h3>
+    <p>You can book forex on behalf of your Elastomers, and group honkings, and send payment leks to them. Get a live Forex Rate Screen to quote the best Forex rates to your customers.Click here for more information</p>
+</div>
+
+<div  class="a-card">
+    <h3>Corporate</h3>
+    <p>When your employees travel internationally, manage all your forex needs online. Book forex, track payments, and easily generate necessary forex request letters. Streamline the process and ensure smooth transactions.</p>
+</div>
+
+</div>
+
+</div>
+</div>
+<body>
+</html>
+
+<style>
+h1,h3{
+text-align:center;
+}
+
+
+
+.a-card {
+            height:350px;
+            width: 300px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            background: #fff;
+            text-align: center;
+            font-family: Arial, sans-serif;
+             
+        }
+		.a-card:hover {
+    box-shadow: 0px 0px 15px rgba(0, 150, 255, 0.5); /* Blue glow */
+        }
+</style>

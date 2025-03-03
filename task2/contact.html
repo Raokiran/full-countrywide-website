@@ -1,0 +1,130 @@
+<html>
+<head><title>Country Wide</title></head>
+<link rel="stylesheet" href="Country.css">
+
+<script>
+document.addEventListener("DOMContentLoaded",function(){
+fetch("header.html")
+.then(response=>response.text())
+.then(html=>{
+    let navbar=document.createElement('div');
+    let shadow=navbar.attachShadow({mode:'open'});
+    shadow.innerHTML=html;
+    document.body.prepend(navbar);
+});
+
+fetch('footer.html')
+.then(response=>response.text())
+.then(html=>{
+  let footer=document.createElement('div');
+  let shadow=footer.attachShadow({mode:'open'});
+  shadow.innerHTML=html;
+  document.body.append(footer);
+});
+
+});
+
+function showalert(){
+
+  let  name = document.getElementById("name").value.trim();
+  let  phone = document.getElementById("phone").value.trim(); 
+   let  email = document.getElementById("email").value.trim();
+   let  message = document.getElementById("message").value.trim();
+   if(!name||!phone||!email||!message){
+    alert("Please enter the complete details");
+    return;
+   }
+   if (!/^\d{10}$/.test(phone)) {
+        alert("Please enter a valid 10-digit phone number.");
+        return;
+    }
+    let emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+  
+    if (!emailPattern.test(email)) {
+  alert("Enter the Valid email")
+}
+else{
+alert("Name: " + name + "\nPhone: " + phone + "\nEmail: " + email + "\nMessage: " + message);    
+return;
+}
+}
+</script>
+
+
+<body>
+<div style="padding:40px"></div>
+<div class="bg page_header">
+<h1 class="text">Contact Us</h1>
+<div class="links"><a href="home.html" class="link-color">Home</a>.<a href="contact.html">Contact Us</a></div>
+</div>
+
+<div style="padding:10px;display:flex;gap:50px;justify-content:left;">
+
+
+<div style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);overflow: hidden;width:500px" >
+<h1>Contact Information</h1>
+<h3> 💼Business Name:</h3>
+<p>Country Wide Tours and Travels</p>
+<h3>📞</h3>
+<p>+91 96112 82634<br>
++91 91083 97777</p>
+<h3> 📧 EMAIL:</h3>
+<p>currency@countrywideairtravels.com</p>
+<h3> 📍 ADDRESS:</h3>
+<p>
+94, Y.V. Annaiah Road, Kanakapura Main Rd, opp. Vita Technology Pvt. Ltd, Yelachenahalli, Bengaluru, Karnataka 560078</p>
+</div>
+
+<div >
+<div style="padding-left:250px"><h3 style="color:green;text-align:center;background-color:pink ;width:150px;">-Get in Touch-</h3></div>
+<h1 style="padding-left:210px">Let’s Get in Touch</h1>
+<h4 style="padding-left:150px">Fill out the form below, and we’ll get back to you shortly.</h4>
+<form  onsubmit="return false;">
+ <div><textarea  id="name" rows="2" cols="20" placeholder="Your Name:"></textarea>  <textarea id="phone" rows="2" cols="20" placeholder="Phone Number:"></textarea></div><br>
+   <div><textarea id="email" rows="2" cols="51" placeholder="Your E-Mail:"></textarea></div><br>
+    <div><textarea id="message" rows="5" cols="51" placeholder="Message:"></textarea></div><br>
+<div style="padding-left:260px"><button type="button" onclick="showalert()">Send Now</button></div>
+</form>
+</div>
+</div>
+
+
+
+
+<body>
+</html>
+
+
+
+<style>
+
+
+
+h3{
+color:red;
+
+}
+p{
+font-size:18px;
+font-family:armenian;
+}
+textarea{
+border-radius:10px;
+font-size:20px;
+padding-right:100px;
+
+}
+button{
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    height: 50px;
+    width: 150px;
+    border-radius: 10px;
+	    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+
+}
+
+
+</style>
